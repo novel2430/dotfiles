@@ -1,0 +1,10 @@
+[Unit]
+Description=swhkd hotkey daemon
+BindsTo=default.target
+
+[Service]
+Type=simple
+ExecStart=/home/novel2430/my_script/swhkd/swhkd-run.sh
+
+[Install]
+WantedBy=default.target

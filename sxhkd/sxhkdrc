@@ -1,0 +1,44 @@
+
+# Reload sxhkd
+super + Escape
+  killall sxhkd; sxhkd &
+
+# Open Browser
+super + shift + f
+  thorium-browser
+
+# Audio
+XF86AudioMute
+  /home/novel2430/my_script/volume.sh mute
+XF86AudioLowerVolume
+  /home/novel2430/my_script/volume.sh down
+XF86AudioRaiseVolume
+  /home/novel2430/my_script/volume.sh up
+
+# slstatus
+super + shift + s
+  killall slstatus; slstatus &
+
+# lock screen
+super + shift + l
+  betterlockscreen -l blur
+
+# ScreenShot (Scrot)
+Print
+  ~/my_script/scrot-screenshot.sh full
+super + Print
+  ~/my_script/scrot-screenshot.sh select
+
+# Clipboard (clipmenu)
+super + c
+  CM_LAUNCHER=rofi clipmenu -p 'Clipboard'
+
+# FZF
+super + shift + n
+  alacritty -T FZF -e ~/my_script/nvim-fzf-config.sh
+super + n
+  alacritty -T FZF -e ~/my_script/nvim-fzf.sh
+
+# Rofi script
+alt + Tab
+  rofi -show window -no-fixed-line-nums

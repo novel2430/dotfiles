@@ -1,0 +1,37 @@
+# App
+## Browser
+super + shift + f
+  chromium-way
+# Volume
+XF86AudioMute
+  /home/novel2430/my_script/volume.sh mute
+XF86AudioLowerVolume
+  /home/novel2430/my_script/volume.sh down
+XF86AudioRaiseVolume
+  /home/novel2430/my_script/volume.sh up
+# Reload waybar
+super + shift + e
+  killall waybar; waybar -c ~/.config/waybar/config-river -s ~/.config/waybar/style-river.css &
+# Reload river config
+super + shift + r
+  /home/novel2430/.config/river/init reload
+# Clipboard (cliphist)
+super + c
+  /home/novel2430/my_script/wayland-clipboard.sh
+# ScreenShot (grim + slurp)
+Print
+  ~/my_script/grim-slurp-screenshot.sh full
+super + Print
+  ~/my_script/grim-slurp-screenshot.sh select
+# Lockscreen (swaylock-effect)
+super + shift + l
+  ~/my_script/swaylock.sh manual
+# FZF
+super + shift + n
+  alacritty -T FZF -e ~/my_script/nvim-fzf-config.sh
+super + n
+  alacritty -T FZF -e ~/my_script/nvim-fzf.sh
+# Rofi script
+## Power Menu
+super + shift + p
+  /home/novel2430/my_script/power-menu.sh
