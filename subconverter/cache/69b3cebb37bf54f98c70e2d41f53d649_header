@@ -1,0 +1,18 @@
+HTTP/1.1 200 Connection established
+
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 14 Oct 2023 05:05:11 GMT
+Content-Type: application/octet-stream; charset=utf-8
+Content-Length: 597868
+Connection: keep-alive
+X-Powered-By: PHP/7.4.33
+X-Powered-By: PleskLin
+Cache-Control: no-store, no-cache, must-revalidate
+Content-Disposition: attachment; filename=WgetCloud.yaml
+Subscription-Userinfo: upload=0; download=62472254012; total=134217728000; expire=1699077303
+profile-web-page-url: https://wgetcloud.ltd
+CF-Cache-Status: DYNAMIC
+CF-RAY: 815d492b2bcf2f1d-LAX
+Cache-Control: no-cache
+
